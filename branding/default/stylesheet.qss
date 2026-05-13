@@ -3,6 +3,311 @@
  * SPDX-License-Identifier: CC0-1.0
  */
 
+/*================*/
+/*   COMPONENTS   */
+/*================*/
+QComboBox, QComboBox::focused, QComboBox:on {
+  color: #fff;
+  background: #bf0c7d;
+}
+
+QAbstractItemView,
+QListView {
+  color: #ddd;
+  background-color: #0f0529;
+  padding: 3px;
+  border: 2px solid #009cad;
+  selection-background-color: #bf0c7d;
+  selection-color: #fff;
+}
+
+QLineEdit {
+  color: #ddd;
+  background-color: #0f0529;
+  padding: 3px;
+  border: 2px solid #009cad;
+}
+
+QProgressBar::chunk {
+  color: #000;
+  background-color: #00bccd;
+}
+
+
+/*
+* {
+  font-size: 100pt;
+  color:#fff;
+} 
+#mainApp {
+  font-size: 10pt;
+}
+*/
+
+#sidebarApp{
+  background-color: transparent;
+  border-radius: 12px;
+  padding-bottom: 10px;
+}
+#sidebarMenuApp{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #0f0529;
+  border-radius: 12px;
+}
+#sidebarMenuApp {
+  background-color: #0f0529;
+  border-radius: 12px;
+}
+
+/*--CLICK BTNs--*/
+#view-button-next {
+  color: #000;
+  background-color: #009cad;
+}
+#view-button-next::hover {
+  color: #000;
+  background-color: #00bccd;
+}
+#view-button-next::disabled {
+  color: #222;
+  background-color: #304c5d;
+}
+
+#newVolumeGroupButton {
+  color: #000;
+  background-color: #009cad;
+}
+#newVolumeGroupButton::hover {
+  color: #000;
+  background-color: #00bccd;
+}
+#newVolumeGroupButton::disabled {
+  color: #222;
+  background-color: #304c5d;
+}
+
+#resizeVolumeGroupButton {
+  color: #000;
+  background-color: #009cad;
+}
+#resizeVolumeGroupButton::hover {
+  color: #000;
+  background-color: #00bccd;
+}
+#resizeVolumeGroupButton::disabled {
+  color: #222;
+  background-color: #304c5d;
+}
+
+/*--HESITATE BTNs--*/
+#view-button-back {
+  color: #000;
+  background-color: #006c8d;
+}
+#view-button-back::hover {
+  color: #000;
+  background-color: #403c8d;
+}
+#view-button-back::disabled {
+  color: #222;
+  background-color: #304c5d;
+}
+
+#deactivateVolumeGroupButton {
+  color: #000;
+  background-color: #006c8d;
+}
+#deactivateVolumeGroupButton::hover {
+  color: #000;
+  background-color: #403c8d;
+}
+#deactivateVolumeGroupButton::disabled {
+  color: #222;
+  background-color: #304c5d;
+}
+
+#view-button-back {
+  color: #000;
+  background-color: #006c8d;
+}
+#view-button-back::hover {
+  color: #000;
+  background-color: #403c8d;
+}
+#view-button-back::disabled {
+  color: #222;
+  background-color: #304c5d;
+}
+
+/*--DANGER BTNs--*/
+#view-button-cancel {
+  color: #ddd;
+  background-color: #600f3d;
+}
+#view-button-cancel::hover {
+  color: #000;
+  background-color: #df1c8d;
+}
+#view-button-cancel::disabled {
+  color: #222;
+  background-color: #5d3430;
+}
+
+#newPartitionTableButton {
+  color: #ddd;
+  background-color: #600f3d;
+}
+#newPartitionTableButton::hover {
+  color: #000;
+  background-color: #df1c8d;
+}
+#newPartitionTableButton::disabled {
+  color: #222;
+  background-color: #5d3430;
+}
+
+#removeVolumeGroupButton {
+  color: #ddd;
+  background-color: #600f3d;
+}
+#removeVolumeGroupButton::hover {
+  color: #000;
+  background-color: #df1c8d;
+}
+#removeVolumeGroupButton::disabled {
+  color: #222;
+  background-color: #5d3430;
+}
+
+#view-button-cancel {
+  color: #ddd;
+  background-color: #600f3d;
+}
+#view-button-cancel::hover {
+  color: #000;
+  background-color: #df1c8d;
+}
+#view-button-cancel::disabled {
+  color: #222;
+  background-color: #5d3430;
+}
+
+Calamares::debugwindow * {
+  background: red;
+}
+/*================*/
+/* WELCOME SCREEN */
+/*================*/
+
+/*--checks--*/
+CheckerContainer QListView {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ff7c9d;
+  background: qradialgradient(
+    cx: 0.5,
+    cy: 0.5,
+    radius: 1,
+    fx: 0.5,
+    fy: 0.5,
+    stop: 0 rgba(0, 188, 205, 0.1),
+    stop: 0.75 rgba(0, 188, 205, 0.2),
+    stop: 1 rgba(0, 188, 205, 0.3)
+  );
+}
+/*--checks--*/
+
+/*==================*/
+/* PARTITION SCREEN */
+/*==================*/
+
+#deviceInfoIcon,
+#bootInfoIcon {
+  color: #ddd;
+  background-color: #0f0529;
+  border: 2px solid #009cad;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-right: none;
+}
+#deviceInfoLabel,
+#bootInfoLabel {
+  color: #ddd;
+  background-color: #0f0529;
+  border: 2px solid #009cad;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-left: none;
+}
+#m_drivesLabel {
+  border: 2px solid #830c6d;
+  border-radius: 9px;
+}
+#m_itemsScrollArea,
+#m_itemsScrollArea > * > * {
+  background: transparent;
+}
+#m_itemsScrollArea {
+  border: 2px solid #df1c8d;
+  border-radius: 9px;
+  padding: 20px;
+  background: qradialgradient(
+    cx: 0.5,
+    cy: 0.5,
+    radius: 1,
+    fx: 0.5,
+    fy: 0.5,
+    stop: 0 rgba(223, 28, 141, 0),
+    stop: 1 rgba(223, 28, 141, 0.2)
+  );
+}
+#m_itemsScrollArea QRadioButton::indicator {
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  border: 2px solid #df1c8d;
+  background: transparent;
+}
+#m_itemsScrollArea QRadioButton::indicator:checked {
+  background: qradialgradient(
+    cx: 0.5,
+    cy: 0.5,
+    radius: 0.5,
+    fx: 0.5,
+    fy: 0.5,
+    stop: 0.5 cyan,
+    stop: 0.6 rgba(0, 0, 0, 0)
+  );
+  border: 2px solid cyan;
+}
+#m_previewBeforeFrame > *,
+#m_previewAfterFrame > * {
+  color: black;
+  background: rgba(50, 250, 250, 0.1);
+}
+#m_previewBeforeFrame PartitionLabelsView,
+#m_previewAfterFrame PartitionLabelsView {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+#m_previewBeforeFrame > *,
+#m_previewAfterFrame > * {
+  padding: 0px;
+  margin: 0px;
+}
+#m_previewBeforeFrame PartitionBarsView,
+#m_previewAfterFrame PartitionBarsView {
+  margin: 0px;
+}
+
+SummaryPage * {
+  background-color: rgba(0, 0, 0, 0);
+}
+#summaryStep QLabel {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
 /*
 A branding component can ship a stylesheet (like this one)
 which is applied to parts of the Calamares user-interface.
@@ -46,11 +351,8 @@ QPushButton { background-color: green; }
  * delegate code.
  */
 
-/*
-#mainApp { }
-#sidebarApp { }
-#logoApp { }
-*/
+/*#sidebarApp { }
+#logoApp { }*/
 
 /*** Welcome module.
  *
