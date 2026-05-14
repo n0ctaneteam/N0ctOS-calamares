@@ -62,7 +62,7 @@ images:
     productIcon:         "N0ctOS_Icon_logo.png"
     productLogo:         "N0ctOS_Icon.png"
     productWallpaper:    "bg-tile.png"
-    productWelcome:      "language.png"
+    productWelcome:      "map.png"
 
 # Colors for text and background components.
 # the corresponding CSS attributes of #sidebarApp.
