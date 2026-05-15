@@ -1,6 +1,0 @@
-#!/bin/env bash
-env WAYLAND_DISPLAY=$WAYLAND_DISPLAY \
-XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
-QT_QPA_PLATFORM=wayland \
-calamares -d
-# QT_QPA_PLATFORMTHEME=qt6ct \
