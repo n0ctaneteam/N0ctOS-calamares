@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Install System
-GenericName=System Installer
+Name=Install N0ctOS
+GenericName=N0ctOS Installer
 Keywords=calamares;system;installer;
 TryExec=calamares
-Exec=sh -c "pkexec calamares"
-Comment=Calamares — System Installer
+Exec=calamares
+Comment=Calamares — N0ctOS Installer
 Icon=calamares
 Terminal=false
 StartupNotify=true
